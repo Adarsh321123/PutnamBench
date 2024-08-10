@@ -64,5 +64,5 @@
    "inputRev": "v4.7.0",
    "inherited": false,
    "configFile": "lakefile.lean"}],
- "name": "putnam",
+ "name": "PutnamBench",
  "lakeDir": ".lake"}
