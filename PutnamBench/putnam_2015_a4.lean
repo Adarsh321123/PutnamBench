@@ -1,8 +1,8 @@
 import Mathlib
 open BigOperators
 
-noncomputable abbrev putnam_2015_a4_solution : ℝ := sorry
--- 4 / 7
+noncomputable abbrev putnam_2015_a4_solution : ℝ := 4 / 7
+
 theorem putnam_2015_a4
 (S : ℝ → Set ℤ)
 (f : ℝ → ℝ)
@@ -13,5 +13,5 @@ theorem putnam_2015_a4
 (L : ℝ)
 (hpL : p L)
 (hLub : ∀ l : ℝ, p l → l ≤ L)
-: (L = putnam_2015_a4_solution) :=
+: (L = putnam_2015_a4_solution) := by
 sorry

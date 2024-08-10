@@ -9,5 +9,5 @@ theorem putnam_1964_a3
 (hxinj : Injective x)
 (ha : a = fun n ↦ x n - sSup ({0} ∪ {p : ℝ | p < x n ∧ ∃ i < n, p = x i}))
 (hb : b = fun n ↦ sInf ({1} ∪ {p : ℝ | p > x n ∧ ∃ i < n, p = x i}) - x n)
-: (∑' n : ℕ, a n * b n * (a n + b n) = 1 / 3) :=
+: (∑' n : ℕ, a n * b n * (a n + b n) = 1 / 3) := by
 sorry

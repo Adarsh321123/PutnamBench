@@ -7,5 +7,5 @@ theorem putnam_2018_a5
 (h1 : f 1 = 1)
 (hpos : ∀ x : ℝ, f x ≥ 0)
 (hf : ContDiff ℝ ⊤ f)
-: ∃ n > 0, ∃ x : ℝ, iteratedDeriv n f x < 0 :=
+: ∃ n > 0, ∃ x : ℝ, iteratedDeriv n f x < 0 := by
 sorry

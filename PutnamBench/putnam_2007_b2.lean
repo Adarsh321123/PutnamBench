@@ -10,5 +10,5 @@ theorem putnam_2007_b2
 (max : ℝ)
 (heqmax : ∃ x ∈ Icc (0 : ℝ) 1, |deriv f x| = max)
 (hmaxub : ∀ x ∈ Icc (0 : ℝ) 1, |deriv f x| ≤ max)
-: (∀ α ∈ (Ioo (0 : ℝ) 1), |∫ x in (0)..α, f x| ≤ (1 / 8) * max) :=
+: (∀ α ∈ (Ioo (0 : ℝ) 1), |∫ x in (0)..α, f x| ≤ (1 / 8) * max) := by
 sorry

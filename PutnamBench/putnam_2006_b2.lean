@@ -6,5 +6,5 @@ theorem putnam_2006_b2
 (npos : n > 0)
 (X : Finset ℝ)
 (hXcard : X.card = n)
-: (∃ S ⊆ X, S ≠ ∅ ∧ ∃ m : ℤ, |m + ∑ s in S, s| ≤ 1 / (n + 1)) :=
+: (∃ S ⊆ X, S ≠ ∅ ∧ ∃ m : ℤ, |m + ∑ s in S, s| ≤ 1 / (n + 1)) := by
 sorry

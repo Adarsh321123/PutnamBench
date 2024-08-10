@@ -8,5 +8,5 @@ theorem putnam_2012_a2
 (a b c : S)
 (hS : ∀ x y : S, ∃ z : S, x * z = y)
 (habc : a * c = b * c)
-: a = b :=
+: a = b := by
 sorry

@@ -3,8 +3,8 @@ open BigOperators
 
 open Topology Filter Nat Function Polynomial
 
-abbrev putnam_1992_b4_solution : ℕ := sorry
--- 3984
+abbrev putnam_1992_b4_solution : ℕ := 3984
+
 theorem putnam_1992_b4
 (valid : Polynomial ℝ → Prop)
 (hvalid : valid = fun p ↦ p ≠ 0 ∧ p.degree < 1992 ∧ IsCoprime p (X ^ 3 - X))
@@ -13,5 +13,5 @@ theorem putnam_1992_b4
 (min : ℕ)
 (hmineq : ∃ p f : Polynomial ℝ, (valid p ∧ pair p f) ∧ min = f.degree)
 (hminlb : ∀ p f : Polynomial ℝ, (valid p ∧ pair p f) → min ≤ f.degree)
-: (min = putnam_1992_b4_solution) :=
+: (min = putnam_1992_b4_solution) := by
 sorry

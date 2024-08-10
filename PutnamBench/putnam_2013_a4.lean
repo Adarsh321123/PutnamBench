@@ -17,5 +17,5 @@ theorem putnam_2013_a4
 (kpos : k ≥ 1)
 (hZsum : Zsum = ((1 : ℝ) / k) * ∑ j : Fin k, Z (ws j))
 (hNsum : Nsum = ((1 : ℝ) / k) * ∑ j : Fin k, N (ws j))
-: ∃ w : Fin n × Fin (n + 1), Z w = Zsum ∧ N w = Nsum :=
+: ∃ w : Fin n × Fin (n + 1), Z w = Zsum ∧ N w = Nsum := by
 sorry

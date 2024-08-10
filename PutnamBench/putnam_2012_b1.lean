@@ -15,5 +15,5 @@ theorem putnam_2012_b1
 (hsum : ∀ f ∈ S, ∀ g ∈ S, (fun x ↦ (f x) + (g x)) ∈ S)
 (hcomp : ∀ f ∈ S, ∀ g ∈ S, ∀ gnneg : Set.Ici (0 : ℝ) → Set.Ici (0 : ℝ), ((∀ x : Set.Ici (0 : ℝ), g x = gnneg x) → (fun x ↦ f (gnneg x)) ∈ S))
 (hdiff : ∀ f ∈ S, ∀ g ∈ S, (∀ x : Set.Ici (0 : ℝ), f x ≥ g x) → (fun x ↦ (f x) - (g x)) ∈ S)
-: (∀ f ∈ S, ∀ g ∈ S, (fun x ↦ (f x) * (g x)) ∈ S) :=
+: (∀ f ∈ S, ∀ g ∈ S, (fun x ↦ (f x) * (g x)) ∈ S) := by
 sorry

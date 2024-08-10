@@ -3,8 +3,8 @@ open BigOperators
 
 open MvPolynomial Real
 
-abbrev putnam_1987_a5_solution : Prop := sorry
--- False
+abbrev putnam_1987_a5_solution : Prop := False
+
 theorem putnam_1987_a5
 (vec2 : ℝ → ℝ → (Fin 2 → ℝ))
 (vec3 : ℝ → ℝ → ℝ → (Fin 3 → ℝ))
@@ -22,5 +22,5 @@ theorem putnam_1987_a5
 (hFprop3 : Fprop3 = (fun F : Fin 3 → ((Fin 3 → ℝ) → ℝ) => ∀ x y : ℝ, (fun i : Fin 3 => (F i) (vec3 x y 0)) = G (vec2 x y)))
 (hvec2 : ∀ x y : ℝ, (vec2 x y) 0 = x ∧ (vec2 x y) 1 = y)
 (hvec3 : ∀ x y z : ℝ, (vec3 x y z) 0 = x ∧ (vec3 x y z) 1 = y ∧ (vec3 x y z) 2 = z)
-: (∃ F : Fin 3 → ((Fin 3 → ℝ) → ℝ), Fprop1 F ∧ Fprop2 F ∧ Fprop3 F) ↔ putnam_1987_a5_solution :=
+: (∃ F : Fin 3 → ((Fin 3 → ℝ) → ℝ), Fprop1 F ∧ Fprop2 F ∧ Fprop3 F) ↔ putnam_1987_a5_solution := by
 sorry

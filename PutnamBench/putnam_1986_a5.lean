@@ -16,5 +16,5 @@ theorem putnam_1986_a5
 (hfcontdiff1 : ∀ i : Fin n, ∀ j : Fin n, ∀ x : Fin n → ℝ, contdiffx (f i) j x)
 (hfcontdiff2 : ∀ i : Fin n, ∀ j1 j2 : Fin n, ∀ x : Fin n → ℝ, contdiffx (partderiv (f i) j1) j2 x)
 (hfc : ∃ c : Fin n → Fin n → ℝ, ∀ i j : Fin n, partderiv (f i) j - partderiv (f j) i = (fun x : Fin n → ℝ => c i j))
-: ∃ g : (Fin n → ℝ) → ℝ, ∀ i : Fin n, IsLinearMap ℝ (f i + partderiv g i) :=
+: ∃ g : (Fin n → ℝ) → ℝ, ∀ i : Fin n, IsLinearMap ℝ (f i + partderiv g i) := by
 sorry

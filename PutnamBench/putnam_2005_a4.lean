@@ -14,5 +14,5 @@ theorem putnam_2005_a4
 (hab : 1 ≤ a ∧ a ≤ n ∧ 1 ≤ b ∧ b ≤ n)
 (Ssub : ∃ (rri : Fin a → Fin n) (cri : Fin b → Fin n), rri.Injective ∧ cri.Injective ∧ S = H.submatrix rri cri)
 (Sentries : ∀ (i : Fin a) (j : Fin b), S i j = 1)
-: a * b ≤ n :=
+: a * b ≤ n := by
 sorry

@@ -14,5 +14,5 @@ theorem putnam_1970_b6
 ∃! I : EuclideanSpace ℝ (Fin 2), Collinear ℝ {I, L i, L (i + 1)} ∧ dist O I = r)
 (harea : (MeasureTheory.volume (convexHull ℝ S)).toReal =
 Real.sqrt (dist (L 0) (L 1) * dist (L 1) (L 2) * dist (L 2) (L 3) * dist (L 3) (L 0)))
-: Cospherical S :=
+: Cospherical S := by
 sorry

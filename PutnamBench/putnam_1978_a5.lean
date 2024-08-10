@@ -10,5 +10,5 @@ theorem putnam_1978_a5
 (ha : ∀ i : Fin n, a i ∈ Ioo 0 Real.pi)
 (μ : ℝ)
 (hμ : μ = ∑ i : Fin n, a i / n)
-: (∏ i : Fin n, sin (a i) / (a i) ≤ (sin μ / μ) ^ n) :=
+: (∏ i : Fin n, sin (a i) / (a i) ≤ (sin μ / μ) ^ n) := by
 sorry

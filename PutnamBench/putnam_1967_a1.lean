@@ -10,5 +10,5 @@ theorem putnam_1967_a1
 (hf : f = (fun x : ℝ => ∑ i : Set.Icc 1 n, a i * Real.sin (i * x)))
 (npos : n > 0)
 (flesin : ∀ x : ℝ, abs (f x) ≤ abs (Real.sin x))
-: abs (∑ i : Set.Icc 1 n, i * a i) ≤ 1 :=
+: abs (∑ i : Set.Icc 1 n, i * a i) ≤ 1 := by
 sorry

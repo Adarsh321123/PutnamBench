@@ -13,5 +13,5 @@ theorem putnam_2013_a2
 (hT : T = fun n : ℤ => {m : ℤ | ∃ a : List ℤ, P n a ∧ a[a.length - 1]! = m})
 (f : ℤ → ℤ)
 (hf : ∀ n ∈ S, ((∃ r ∈ T n, f n = r) ∧ ∀ r ∈ T n, f n ≤ r))
-: InjOn f S :=
+: InjOn f S := by
 sorry

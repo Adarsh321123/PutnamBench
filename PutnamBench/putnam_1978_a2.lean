@@ -11,5 +11,5 @@ theorem putnam_1978_a2
 (hA : A = fun i j ↦ ite (i < j) a (ite (i > j) b (c i)))
 (p : ℝ → ℝ)
 (hp : p = fun x ↦ ∏ i : Fin n, (c i - x))
-: (A.det = ((b * p a - a * p b) / (b - a))) :=
+: (A.det = ((b * p a - a * p b) / (b - a))) := by
 sorry

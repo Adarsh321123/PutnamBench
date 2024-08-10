@@ -18,5 +18,5 @@ theorem putnam_1963_a6
 (hM : M ∈ segment ℝ A B ∧ M ∈ segment ℝ C D)
 (hP : Collinear ℝ {P, A, C} ∧ Collinear ℝ {P, U, V})
 (hQ : Collinear ℝ {P, B, D} ∧ Collinear ℝ {Q, U, V})
-: M = midpoint ℝ P Q :=
+: M = midpoint ℝ P Q := by
 sorry

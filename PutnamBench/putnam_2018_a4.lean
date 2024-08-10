@@ -11,5 +11,5 @@ theorem putnam_2018_a4
 (mngcd : Nat.gcd m n = 1)
 (ha : ∀ k : Set.Icc 1 n, a k = Int.floor (m * k / (n : ℝ)) - Int.floor (m * ((k : ℤ) - 1) / (n : ℝ)))
 (ghprod : ((List.Ico 1 (n + 1)).map (fun k : ℕ => g * h ^ (a k))).prod = 1)
-: g * h = h * g :=
+: g * h = h * g := by
 sorry

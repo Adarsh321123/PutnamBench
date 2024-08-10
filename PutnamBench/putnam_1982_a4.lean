@@ -9,5 +9,5 @@ theorem putnam_1982_a4
 (f g : ℝ → ℝ)
 (hfgsat : hdiffeq f g)
 (hfgonly : ¬(∃ f' g' : ℝ → ℝ, (f ≠ f' ∨ g ≠ g') ∧ hdiffeq f' g'))
-: ∃ L : ℝ, L > 0 ∧ Function.Periodic f L ∧ Function.Periodic g L :=
+: ∃ L : ℝ, L > 0 ∧ Function.Periodic f L ∧ Function.Periodic g L := by
 sorry

@@ -20,5 +20,5 @@ theorem putnam_1976_b3
 (heventsmeas : ∀ i : Fin n, MeasurableSet (events i))
 (heventsprob : ∀ i : Fin n, μ (events i) ≥ ENNReal.ofReal (1 - a))
 (heventsindep : ∀ i j : Fin n, |(i : ℤ) - (j : ℤ)| > 1 → IndepSet (events i) (events j) μ)
-: μ (⋂ i : Fin n, events i) ≥ ENNReal.ofReal (u n) :=
+: μ (⋂ i : Fin n, events i) ≥ ENNReal.ofReal (u n) := by
 sorry

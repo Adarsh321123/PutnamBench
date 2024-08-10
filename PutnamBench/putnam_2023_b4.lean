@@ -4,8 +4,8 @@ open BigOperators
 open Nat Topology Filter
 
 -- Note: uses (ℕ → ℝ) instead of (Fin (n + 1) → ℝ) and (ℝ → ℝ) instead of (tall ts → ℝ)
-abbrev putnam_2023_b4_solution : ℝ := sorry
--- 29
+abbrev putnam_2023_b4_solution : ℝ := 29
+
 theorem putnam_2023_b4
 (tne : ℕ → (ℕ → ℝ) → Set ℝ)
 (fdiff flim fderiv1 fderiv2 fall : ℕ → (ℕ → ℝ) → (ℝ → ℝ) → Prop)
@@ -19,5 +19,5 @@ theorem putnam_2023_b4
 (hfall : ∀ n : ℕ, ∀ ts : ℕ → ℝ, ∀ f : ℝ → ℝ, fall n ts f = (fdiff n ts f ∧ f (ts 0) = 0.5 ∧ flim n ts f ∧ fderiv1 n ts f ∧ fderiv2 n ts f))
 (htinc : ∀ n : ℕ, ∀ ts : ℕ → ℝ, tinc n ts = ∀ k : Fin n, ts (k.1 + 1) ≥ ts k.1 + 1)
 (hTall : ∀ T : ℝ, Tall T = ((T ≥ 0) ∧ ∃ n : ℕ, ∃ ts : ℕ → ℝ, ∃ f : ℝ → ℝ, tinc n ts ∧ fall n ts f ∧ f (ts 0 + T) = 2023))
-: Tall putnam_2023_b4_solution ∧ ∀ T : ℝ, Tall T → T ≥ putnam_2023_b4_solution :=
+: Tall putnam_2023_b4_solution ∧ ∀ T : ℝ, Tall T → T ≥ putnam_2023_b4_solution := by
 sorry

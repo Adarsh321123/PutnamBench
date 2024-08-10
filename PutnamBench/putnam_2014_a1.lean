@@ -9,5 +9,5 @@ theorem putnam_2014_a1
 (hfdiff : ContDiff ℝ ⊤ f)
 (c : ℕ → ℝ)
 (hc : ∀ k : ℕ, c k = taylorCoeffWithin f k Set.univ 0)
-: ∀ k : ℕ, c k ≠ 0 → ∃ q : ℚ, c k = q ∧ (q.num = 1 ∨ Prime q.num.natAbs) :=
+: ∀ k : ℕ, c k ≠ 0 → ∃ q : ℚ, c k = q ∧ (q.num = 1 ∨ Prime q.num.natAbs) := by
 sorry

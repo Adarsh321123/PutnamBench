@@ -12,5 +12,5 @@ theorem putnam_1965_b6
 (through_def : through = fun (r, P) => fun Q => dist P Q = r)
 (hABCD : ∀ r s : ℝ, ∀ P Q : EuclideanSpace ℝ (Fin 2), through (r, P) A ∧ through (r, P) B ∧ through (s, Q) C ∧ through (s, Q) D →
 ∃ I : EuclideanSpace ℝ (Fin 2), through (r, P) I ∧ through (s, Q) I)
-: Collinear ℝ S ∨ ∃ r : ℝ, ∃ P : EuclideanSpace ℝ (Fin 2), ∀ Q ∈ S, through (r, P) Q :=
+: Collinear ℝ S ∨ ∃ r : ℝ, ∃ P : EuclideanSpace ℝ (Fin 2), ∀ Q ∈ S, through (r, P) Q := by
 sorry

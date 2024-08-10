@@ -4,8 +4,8 @@ open BigOperators
 open Nat
 
 -- Note: uses (ℕ → ℕ → Bool) instead of (Fin m → Fin n → Bool)
-abbrev putnam_2023_b1_solution : ℕ → ℕ → ℕ := sorry
--- (fun m n : ℕ => Nat.choose (m + n - 2) (m - 1))
+abbrev putnam_2023_b1_solution : ℕ → ℕ → ℕ := (fun m n : ℕ => Nat.choose (m + n - 2) (m - 1))
+
 theorem putnam_2023_b1
 (m n : ℕ)
 (initcoins : ℕ → ℕ → Bool)
@@ -17,5 +17,5 @@ coins1 i j ∧ !coins1 (i + 1) j ∧ !coins1 i (j + 1) ∧ !coins1 (i + 1) (j + 
 (legalseq : List (ℕ → ℕ → Bool) → Prop)
 (hlegalseq : legalseq = (fun seq : List (ℕ → ℕ → Bool) => seq.length ≥ 1 ∧ seq[0]! = initcoins ∧ (∀ i < seq.length - 1, legalmove seq[i]! seq[i + 1]!)))
 (mnpos : m ≥ 1 ∧ n ≥ 1)
-: {config : ℕ → ℕ → Bool | ∃ seq : List (ℕ → ℕ → Bool), legalseq seq ∧ config = seq.getLast!}.encard = putnam_2023_b1_solution m n :=
+: {config : ℕ → ℕ → Bool | ∃ seq : List (ℕ → ℕ → Bool), legalseq seq ∧ config = seq.getLast!}.encard = putnam_2023_b1_solution m n := by
 sorry

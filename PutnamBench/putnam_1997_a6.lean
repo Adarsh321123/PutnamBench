@@ -3,8 +3,8 @@ open BigOperators
 
 open Filter Topology
 
-abbrev putnam_1997_a6_solution : ℤ → ℤ → ℝ := sorry
--- fun n k => Nat.choose (n.toNat-1) (k.toNat-1)
+abbrev putnam_1997_a6_solution : ℤ → ℤ → ℝ := fun n k => Nat.choose (n.toNat-1) (k.toNat-1)
+
 theorem putnam_1997_a6
 (n : ℤ)
 (hn : n > 0)
@@ -16,5 +16,5 @@ theorem putnam_1997_a6
 (S : Set ℝ)
 (hS : S = {c : ℝ | x c (n + 1) = 0})
 (hC : C = sSup S)
-: ∀ k : Set.Icc 1 n, x C k = putnam_1997_a6_solution n k :=
+: ∀ k : Set.Icc 1 n, x C k = putnam_1997_a6_solution n k := by
 sorry

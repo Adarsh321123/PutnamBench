@@ -10,5 +10,5 @@ theorem putnam_1986_b6
 (A B C D : Matrix (Fin n) (Fin n) F)
 (hsymm : IsSymm (A * Bᵀ) ∧ IsSymm (C * Dᵀ))
 (hid : A * Dᵀ - B * Cᵀ = 1)
-: (Aᵀ * D - Cᵀ * B = 1) :=
+: (Aᵀ * D - Cᵀ * B = 1) := by
 sorry

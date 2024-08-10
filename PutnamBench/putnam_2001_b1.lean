@@ -12,5 +12,5 @@ theorem putnam_2001_b1
 (hnums : ∀ k l : Fin n, nums k l = k * n + l + 1)
 (hcolorsrows : ∀ k : Fin n, (∑ l : Fin n, (if (colors k l = 0) then 1 else 0)) = n / 2)
 (hcolorscols : ∀ l : Fin n, (∑ k : Fin n, (if (colors k l = 0) then 1 else 0)) = n / 2)
-: (∑ k : Fin n, ∑ l : Fin n, (if (colors k l = 0) then (nums k l) else 0)) = (∑ k : Fin n, ∑ l : Fin n, (if (colors k l = 1) then (nums k l) else 0)) :=
+: (∑ k : Fin n, ∑ l : Fin n, (if (colors k l = 0) then (nums k l) else 0)) = (∑ k : Fin n, ∑ l : Fin n, (if (colors k l = 1) then (nums k l) else 0)) := by
 sorry

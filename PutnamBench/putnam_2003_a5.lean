@@ -12,5 +12,5 @@ theorem putnam_2003_a5
 (noevenreturn : (m : ℕ) → Set ((Fin (2 * m)) → ℤ))
 (hnoevenreturn : noevenreturn = fun m ↦ {p : Fin (2 * m) → ℤ |
       ¬∃ i j : Fin (2 * m), i < j ∧ p i = 1 ∧ (∀ k ∈ Ioc i j, p i = -1) ∧ Even (j.1 - i.1) ∧ ∑ k : Fin (2 * m), ite (k ≤ j) (p k) 0 = 0})
-: (∃ f : ((Fin (2 * n)) → ℤ) → (Fin (2 * (n - 1)) → ℤ), ∀ y ∈ dyckpath (n - 1), ∃! x, x ∈ dyckpath n ∩ noevenreturn n ∧ f x = y) :=
+: (∃ f : ((Fin (2 * n)) → ℤ) → (Fin (2 * (n - 1)) → ℤ), ∀ y ∈ dyckpath (n - 1), ∃! x, x ∈ dyckpath n ∩ noevenreturn n ∧ f x = y) := by
 sorry

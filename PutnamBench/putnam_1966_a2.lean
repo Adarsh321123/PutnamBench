@@ -15,5 +15,5 @@ theorem putnam_1966_a2
 (∃! Q : EuclideanSpace ℝ (Fin 2), dist I Q = r ∧ Collinear ℝ {Q, C, A}) ∧
 (∃! R : EuclideanSpace ℝ (Fin 2), dist I R = r ∧ Collinear ℝ {R, A, B}) ∧
 (∀ Z : EuclideanSpace ℝ (Fin 2), dist I Z ≤ r → Z ∈ convexHull ℝ {A, B, C}))
-: 1/(p - a)^2 + 1/(p - b)^2 + 1/(p - c)^2 ≥ 1/r^2 :=
+: 1/(p - a)^2 + 1/(p - b)^2 + 1/(p - c)^2 ≥ 1/r^2 := by
 sorry

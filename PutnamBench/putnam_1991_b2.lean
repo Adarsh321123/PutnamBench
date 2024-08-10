@@ -9,5 +9,5 @@ theorem putnam_1991_b2
 (fgdiff : Differentiable ℝ f ∧ Differentiable ℝ g)
 (fadd : ∀ x y : ℝ, f (x + y) = f x * f y - g x * g y)
 (gadd : ∀ x y : ℝ, g (x + y) = f x * g y + g x * f y)
-: (deriv f 0 = 0) → (∀ x : ℝ, (f x) ^ 2 + (g x) ^ 2 = 1) :=
+: (deriv f 0 = 0) → (∀ x : ℝ, (f x) ^ 2 + (g x) ^ 2 = 1) := by
 sorry

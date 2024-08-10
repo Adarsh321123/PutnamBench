@@ -14,5 +14,5 @@ theorem putnam_1962_a3
 (hP : P ∈ segment ℝ B B' ∧ P ∈ segment ℝ C C')
 (hQ : Q ∈ segment ℝ C C' ∧ Q ∈ segment ℝ A A')
 (hR : R ∈ segment ℝ A A' ∧ R ∈ segment ℝ B B')
-: (volume (convexHull ℝ {P, Q, R})).toReal / (volume (convexHull ℝ {A, B, C})).toReal = (k - 1)^2 / (k^2 + k + 1) :=
+: (volume (convexHull ℝ {P, Q, R})).toReal / (volume (convexHull ℝ {A, B, C})).toReal = (k - 1)^2 / (k^2 + k + 1) := by
 sorry

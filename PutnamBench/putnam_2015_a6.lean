@@ -7,5 +7,5 @@ theorem putnam_2015_a6
 (npos : n > 0)
 (hmul : A * M = M * B)
 (hpoly : Matrix.charpoly A = Matrix.charpoly B)
-: ∀ X : Matrix (Fin n) (Fin n) ℝ, (A - M * X).det = (B - X * M).det :=
+: ∀ X : Matrix (Fin n) (Fin n) ℝ, (A - M * X).det = (B - X * M).det := by
 sorry

@@ -14,5 +14,5 @@ theorem putnam_2017_a3
 (fgint : ∫ x in Set.Ioo a b, f x = ∫ x in Set.Ioo a b, g x)
 (fneg : ∃ x : Set.Icc a b, f x ≠ g x)
 (hI : ∀ n > 0, I n = ∫ x in Set.Ioo a b, ((f x) ^ (n + 1)) / ((g x) ^ n))
-: (∀ n > 0, I (n + 1) > I n) ∧ Tendsto I atTop atTop :=
+: (∀ n > 0, I (n + 1) > I n) ∧ Tendsto I atTop atTop := by
 sorry

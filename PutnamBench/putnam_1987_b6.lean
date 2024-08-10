@@ -14,5 +14,5 @@ theorem putnam_1987_b6
 (hS : ∀ a : F, a ≠ 0 → Xor' (a ∈ S) (-a ∈ S))
 (N : ℕ)
 (hN : N = (S ∩ {x | ∃ a ∈ S, x = 2 * a}).ncard)
-: (Even N) :=
+: (Even N) := by
 sorry

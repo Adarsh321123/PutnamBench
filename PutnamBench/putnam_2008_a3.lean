@@ -14,5 +14,5 @@ theorem putnam_2008_a3
 (htrans : trans = fun P ↦ ∀ t : ℕ, cont (P t) →
       ∃ j k : Fin n, j < k ∧ ¬(P t j ∣ P t k) ∧ P (t + 1) j = Nat.gcd (P t j) (P t k) ∧ P (t + 1) k = Nat.lcm (P t j) (P t k) ∧
       ∀ i : Fin n, i ≠ j → i ≠ k → P (t + 1) i = P t i)
-: (∃ f : Fin n → ℕ, ∀ P : ℕ → Fin n → ℕ, init P → trans P → ∃ t : ℕ, ¬cont (P t) ∧ P t = f) :=
+: (∃ f : Fin n → ℕ, ∀ P : ℕ → Fin n → ℕ, init P → trans P → ∃ t : ℕ, ¬cont (P t) ∧ P t = f) := by
 sorry

@@ -8,5 +8,5 @@ theorem putnam_2007_a5
 (p n : ℕ)
 (hp : Nat.Prime p)
 (hn : n = {g : G | orderOf g = p}.encard)
-: n = 0 ∨ p ∣ (n + 1) :=
+: n = 0 ∨ p ∣ (n + 1) := by
 sorry

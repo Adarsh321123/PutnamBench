@@ -9,5 +9,5 @@ theorem putnam_1975_b5
 (f : ℕ → ℝ → ℝ)
 (h0 : ∀ x : ℝ, f 0 x = e^x)
 (hf : ∀ n : ℕ, ∀ x : ℝ, f (n + 1) x = x * (deriv (f n) x))
-: ∑' n : ℕ, (f n 1)/(Nat.factorial n) = e^e :=
+: ∑' n : ℕ, (f n 1)/(Nat.factorial n) = e^e := by
 sorry

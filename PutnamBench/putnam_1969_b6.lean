@@ -11,5 +11,5 @@ theorem putnam_1969_b6
 p 1 0 = 2 ∧ p 1 1 = 5 ∧ p 1 2 = 4 ∧
 p 2 0 = -2 ∧ p 2 1 = 4 ∧ p 2 2 = 5)
 (hAB : A * B = Matrix.of p)
-: B * A = 9 * (1 : Matrix (Fin 2) (Fin 2) ℝ) :=
+: B * A = 9 * (1 : Matrix (Fin 2) (Fin 2) ℝ) := by
 sorry

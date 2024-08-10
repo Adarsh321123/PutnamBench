@@ -10,5 +10,5 @@ theorem putnam_1964_a6
 (distance : ℝ × ℝ → ℝ)
 (hdistance : distance = fun (a, b) ↦ b - a)
 (hrepdist : ∀ p ∈ pairs, (∃ m ∈ pairs, distance m > distance p) → ∃ q ∈ pairs, q ≠ p ∧ distance p = distance q)
-: (∀ p q : pairs, q ≠ p → ∃ r : ℚ, distance p / distance q = r) :=
+: (∀ p q : pairs, q ≠ p → ∃ r : ℚ, distance p / distance q = r) := by
 sorry

@@ -8,5 +8,5 @@ theorem putnam_2003_b3
 (lcmicc : ℕ → ℕ)
 (hmulticc : ∀ n mult : ℕ, multicc n mult = ∀ i : Set.Icc 1 n, i.1 ∣ mult)
 (hlcmicc : ∀ n : ℕ, multicc n (lcmicc n) ∧ (∀ n' : ℕ, multicc n n' → n' ≥ (lcmicc n)))
-: ∀ n > 0, (n)! = ∏ i : Set.Icc 1 n, lcmicc (n / i.1) :=
+: ∀ n > 0, (n)! = ∏ i : Set.Icc 1 n, lcmicc (n / i.1) := by
 sorry

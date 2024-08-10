@@ -9,5 +9,5 @@ theorem putnam_1993_b4
 (fgpos : ∀ x : Set.Icc (0 : ℝ) 1, f x > 0 ∧ g x > 0)
 (fgcont : ContinuousOn f (Set.Icc 0 1) ∧ ContinuousOn g (Set.Icc 0 1))
 (fgint : ∀ x : Set.Icc (0 : ℝ) 1, (∫ y in Set.Ioo 0 1, f y * K (x, y)) = g x ∧ (∫ y in Set.Ioo 0 1, g y * K (x, y)) = f x)
-: ∀ x : Set.Icc (0 : ℝ) 1, f x = g x :=
+: ∀ x : Set.Icc (0 : ℝ) 1, f x = g x := by
 sorry

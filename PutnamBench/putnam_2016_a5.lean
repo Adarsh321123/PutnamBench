@@ -11,5 +11,5 @@ theorem putnam_2016_a5
 (godd : Odd (orderOf g))
 (S : Set G)
 (hS : S = {g * h, g⁻¹ * h, g * h⁻¹, g⁻¹ * h⁻¹})
-: (∀ x : G, ∃ mn : List G, 1 ≤ mn.length ∧ mn.length ≤ Gfin.card ∧ ∀ i : Fin mn.length, mn.get i ∈ S ∧ x = List.prod mn) :=
+: (∀ x : G, ∃ mn : List G, 1 ≤ mn.length ∧ mn.length ≤ Gfin.card ∧ ∀ i : Fin mn.length, mn.get i ∈ S ∧ x = List.prod mn) := by
 sorry

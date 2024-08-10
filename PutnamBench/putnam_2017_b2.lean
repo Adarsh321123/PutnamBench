@@ -3,8 +3,8 @@ open BigOperators
 
 open Topology Filter
 
-abbrev putnam_2017_b2_solution : ℕ := sorry
--- 16
+abbrev putnam_2017_b2_solution : ℕ := 16
+
 theorem putnam_2017_b2
 (mina : ℤ)
 (hmina : mina ≥ 0)
@@ -16,5 +16,5 @@ theorem putnam_2017_b2
 (hq : q = fun N ↦ p N 2017 ∧ ∀ k : ℕ, k > 1 → k ≠ 2017 → ¬p N k)
 (hqmina : q (S mina 2017))
 (hminalb : ∀ a > 0, q (S a 2017) → mina ≤ a)
-: (mina = putnam_2017_b2_solution) :=
+: (mina = putnam_2017_b2_solution) := by
 sorry

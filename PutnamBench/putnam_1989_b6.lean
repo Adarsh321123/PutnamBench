@@ -17,5 +17,5 @@ theorem putnam_1989_b6
 (hfEV : fEV = (fun f : ℝ → ℝ => (∫ x in Sx, fxsum f x) / (∫ x in Sx, 1)))
 (npos : n ≥ 1)
 (hxext : ∀ x : Fin n → ℝ, (xext x) 0 = 0 ∧ (xext x) (n + 1) = 1 ∧ (∀ i : Fin n, (xext x) (i + 1) = x i))
-: ∃ P : Polynomial ℝ, P.degree = n ∧ (∀ t ∈ Set.Icc 0 1, 0 ≤ P.eval t ∧ P.eval t ≤ 1) ∧ (∀ f : ℝ → ℝ, fprop f → fEV f = (∫ t in Set.Ioo 0 1, f t * P.eval t)) :=
+: ∃ P : Polynomial ℝ, P.degree = n ∧ (∀ t ∈ Set.Icc 0 1, 0 ≤ P.eval t ∧ P.eval t ≤ 1) ∧ (∀ f : ℝ → ℝ, fprop f → fEV f = (∫ t in Set.Ioo 0 1, f t * P.eval t)) := by
 sorry

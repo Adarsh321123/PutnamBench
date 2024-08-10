@@ -3,8 +3,8 @@ open BigOperators
 
 open Topology Filter
 
-noncomputable abbrev putnam_1963_a3_solution : (ℝ → ℝ) → ℕ → ℝ → ℝ → ℝ := sorry
--- fun (f : ℝ → ℝ) (n : ℕ) (x : ℝ) (t : ℝ) ↦ (x - t)^(n - 1) * (f t) / (Nat.factorial (n - 1) * t^n)
+noncomputable abbrev putnam_1963_a3_solution : (ℝ → ℝ) → ℕ → ℝ → ℝ → ℝ := fun (f : ℝ → ℝ) (n : ℕ) (x : ℝ) (t : ℝ) ↦ (x - t)^(n - 1) * (f t) / (Nat.factorial (n - 1) * t^n)
+
 theorem putnam_1963_a3
 (n : ℕ)
 (f : ℝ → ℝ)
@@ -17,5 +17,5 @@ theorem putnam_1963_a3
 (hn : n ≥ 1)
 (hf : Continuous f)
 (hP : P 0 y = y ∧ ∀ m ∈ Finset.range n, P (m + 1) y = D (n - 1 - m) (P m y))
-: (ContDiff ℝ n y) ∧ (∀ x ≥ 1, P n y x = f x) ∧ (∀ i ∈ Finset.range n, iteratedDeriv i y 1 = 0) :=
+: (ContDiff ℝ n y) ∧ (∀ x ≥ 1, P n y x = f x) ∧ (∀ i ∈ Finset.range n, iteratedDeriv i y 1 = 0) := by
 sorry

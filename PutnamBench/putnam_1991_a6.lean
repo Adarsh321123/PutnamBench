@@ -16,5 +16,5 @@ theorem putnam_1991_a6
 (hbg1 : ∀ b : ℕ × (ℕ → ℕ), bg1 b = ∀ i : Fin b.1, ∃ j : ℕ, b.2 i = g j)
 (hbg2 : ∀ b : ℕ × (ℕ → ℕ), bg2 b = ∃ k : ℕ, b.2 0 = g k ∧ (∀ j ≤ k, ∃ i : Fin b.1, b.2 i = g j))
 (hB : ∀ n ≥ 1, B n = {b : ℕ × (ℕ → ℕ) | nabsum n b ∧ bge b ∧ bg1 b ∧ bg2 b}.encard)
-: ∀ n ≥ 1, A n = B n :=
+: ∀ n ≥ 1, A n = B n := by
 sorry

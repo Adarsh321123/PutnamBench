@@ -11,5 +11,5 @@ theorem putnam_2000_a5
 (pdiff : ∀ n m : Fin 3, (n ≠ m) → (p n ≠ p m))
 (pint : ∀ (n : Fin 3) (i : Fin 2), p n i = round (p n i))
 (pcirc : ∀ n : Fin 3, p n ∈ Metric.sphere z r)
-: ∃ n m : Fin 3, (n ≠ m) ∧ (dist (p n) (p m) ≥ r ^ ((1 : ℝ) / 3)) :=
+: ∃ n m : Fin 3, (n ≠ m) ∧ (dist (p n) (p m) ≥ r ^ ((1 : ℝ) / 3)) := by
 sorry

@@ -10,5 +10,5 @@ theorem putnam_2012_b6
 (hpmod3 : p ≡ 2 [MOD 3])
 (P : Equiv.Perm (Fin p))
 (hP : ∀ i : Fin p, P i = (i * i * i))
-: Equiv.Perm.signAux P = 1 ↔ (p ≡ 3 [MOD 4]) :=
+: Equiv.Perm.signAux P = 1 ↔ (p ≡ 3 [MOD 4]) := by
 sorry

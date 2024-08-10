@@ -3,8 +3,8 @@ open BigOperators
 
 open Set Function Filter Topology Polynomial Real
 
-abbrev putnam_1982_a6_solution : Prop := sorry
--- False
+abbrev putnam_1982_a6_solution : Prop := False
+
 theorem putnam_1982_a6
 (S : Set ℕ := Ici 1)
 (hb : (ℕ → ℕ) → Prop)
@@ -16,5 +16,5 @@ theorem putnam_1982_a6
 (limx : (ℕ → ℝ) → Prop)
 (hlimx : limx = fun x : ℕ → ℝ => Tendsto (fun n : ℕ => ∑ k in Finset.Icc 1 n, x k) atTop (𝓝 1))
 : (∀ b : ℕ → ℕ, ∀ x : ℕ → ℝ, hb b ∧ hx x ∧ limb (b, x) ∧ limx x →
-Tendsto (fun n : ℕ => ∑ k in Finset.Icc 1 n, x (b k)) atTop (𝓝 1)) ↔ putnam_1982_a6_solution :=
+Tendsto (fun n : ℕ => ∑ k in Finset.Icc 1 n, x (b k)) atTop (𝓝 1)) ↔ putnam_1982_a6_solution := by
 sorry

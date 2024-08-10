@@ -3,8 +3,8 @@ open BigOperators
 
 open MvPolynomial Real
 
-noncomputable abbrev putnam_1987_a4_solution : ℂ := sorry
--- (5 / 3) * sqrt 30
+noncomputable abbrev putnam_1987_a4_solution : ℂ := (5 / 3) * sqrt 30
+
 theorem putnam_1987_a4
 (P : MvPolynomial (Fin 3) ℂ)
 (hPreal : ∀ i : Fin 3 →₀ ℕ, (coeff i P).im = 0)
@@ -16,5 +16,5 @@ theorem putnam_1987_a4
 (A B C : ℂ)
 (hPABC : eval (vars A B C) P = 0)
 (habs : ‖B - A‖ = 10)
-: (‖C - A‖ = putnam_1987_a4_solution) :=
+: (‖C - A‖ = putnam_1987_a4_solution) := by
 sorry

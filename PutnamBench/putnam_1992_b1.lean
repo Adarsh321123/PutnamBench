@@ -3,8 +3,8 @@ open BigOperators
 
 open Topology Filter Nat Function
 
-abbrev putnam_1992_b1_solution : ℕ → ℤ := sorry
--- fun n ↦ 2 * n - 3
+abbrev putnam_1992_b1_solution : ℕ → ℤ := fun n ↦ 2 * n - 3
+
 theorem putnam_1992_b1
 (n : ℕ)
 (nge2 : n ≥ 2)
@@ -13,5 +13,5 @@ theorem putnam_1992_b1
 (min : ℤ)
 (hmineq : ∃ S : Finset ℝ, S.card = n ∧ min = (A S).ncard)
 (hminlb : ∀ S : Finset ℝ, S.card = n → min ≤ (A S).ncard)
-: (min = putnam_1992_b1_solution n) :=
+: (min = putnam_1992_b1_solution n) := by
 sorry

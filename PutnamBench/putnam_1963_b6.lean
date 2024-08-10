@@ -11,5 +11,5 @@ theorem putnam_1963_b6
 (ddim : 1 ≤ d ∧ d ≤ 3)
 (hA0 : Nonempty (A 0))
 (hAn : ∀ n ≥ 1, A n = S (A (n - 1)))
-: ∀ n ≥ 2, A n = A (n + 1) :=
+: ∀ n ≥ 2, A n = A (n + 1) := by
 sorry

@@ -12,5 +12,5 @@ theorem putnam_1977_b6
 (ha : ∀ x : H, (x*a)^3 = 1)
 (P : Set G)
 (hP : P = {g : G | ∃ xs : List H, (xs.length ≥ 1) ∧ g = (List.map (fun h : H => h*a) xs).prod})
-: (Finite P) ∧ (P.ncard ≤ 3*h^2) :=
+: (Finite P) ∧ (P.ncard ≤ 3*h^2) := by
 sorry

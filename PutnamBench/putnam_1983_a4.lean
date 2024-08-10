@@ -9,5 +9,5 @@ theorem putnam_1983_a4
 (kpos : k > 0)
 (hm : m = 6 * k - 1)
 (hS : S = ∑ j in Finset.Icc 1 (2 * k - 1), (-1 : ℤ) ^ (j + 1) * choose m (3 * j - 1))
-: (S ≠ 0) :=
+: (S ≠ 0) := by
 sorry

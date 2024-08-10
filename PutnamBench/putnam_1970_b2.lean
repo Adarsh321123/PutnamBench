@@ -8,5 +8,5 @@ theorem putnam_1970_b2
 (H : Polynomial ℝ)
 (hT : T > 0)
 (hH : H.degree ≤ 3)
-: (H.eval (-T / Real.sqrt 3) + H.eval (T / Real.sqrt 3))/2 = ⨍ t in Set.Icc (-T) T, H.eval t :=
+: (H.eval (-T / Real.sqrt 3) + H.eval (T / Real.sqrt 3))/2 = ⨍ t in Set.Icc (-T) T, H.eval t := by
 sorry

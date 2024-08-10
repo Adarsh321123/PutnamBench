@@ -12,5 +12,5 @@ theorem putnam_1970_a1
 (p : ℕ → ℝ)
 (hp : ∃ c : ℝ, c > 0 ∧ ∀ x ∈ ball 0 c, ∑' n : ℕ, (p n)*x^n = f x)
 (S : Set ℕ := {n : ℕ | p n = 0})
-: S = ∅ ∨ ¬Finite S :=
+: S = ∅ ∨ ¬Finite S := by
 sorry
